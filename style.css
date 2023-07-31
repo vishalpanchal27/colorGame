@@ -26,6 +26,7 @@
 }
 
 .container {
+    position: relative;
     width: 30rem;
     height: 35rem;
     background: #fff;
@@ -34,15 +35,18 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    display: none;
 }
 
-.timer {
-    width: auto;
+.score-box {
+    width: 30rem;
     height: 80px;
     display: flex;
     align-items: center;
-    font-size: 2.5rem;
+    justify-content: space-around;
+    font-size: 2rem;
     color: var(--text-color);
+    display: none;
 }
 
 .random-color {
@@ -68,3 +72,30 @@
     cursor: pointer;
     border: 1px solid black;    
 }
+
+.start-game-screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.btn {
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    outline: none;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    color: var(--primary);
+    padding: .5rem 1rem;
+}
+
+.start {
+    transform: translateY(-100%);
+}
+
